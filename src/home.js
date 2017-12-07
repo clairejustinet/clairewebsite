@@ -1,10 +1,18 @@
 import React, { Component } from "react";
-
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
 import logo from './images/sun.svg';
 import './App.css';
 import './bootstrap/css/bootstrap.css';
 import './bootstrap/css/bootstrap-grid.css';
 import './bootstrap/css/bootstrap-reboot.css';
+import About from "./about";
+import Contact from "./contact";
+
+
 
 class Home extends Component {
     render() {
@@ -23,32 +31,27 @@ class Home extends Component {
                     </p>
                 </section>
 
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark-override bg-dark fixed-bottom">
-                    <div className="container">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarResponsive">
-                            <ul className="navbar-nav ml-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home
-                                        <span className="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">About</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/contact">Contact</a>
-                                </li>
+                <HashRouter>
+                    <div>
+                        <div>
+                            <ul className="header">
+                                <li><NavLink to="/">Home</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
                         </div>
+                        <div className="content">
+                            <Route exact path="/" component={Home}/>
+                            <Route path="/about" component={About}/>
+                            <Route path="/contact" component={Contact}/>
+                        </div>
                     </div>
-                </nav>
+
+                </HashRouter>
 
             </div>
 
-                );
+        );
     }
 }
 
