@@ -56,3 +56,8 @@ nav {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+li {
+  display: inline;
+  margin: 3rem 3rem 0 3rem;
+  font-family: 'Vollkorn SC', serif;
+}

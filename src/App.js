@@ -1,19 +1,9 @@
 import React, { Component } from "react";
-import {
-    Route,
-    NavLink,
-    HashRouter
-} from "react-router-dom";
 import logo from './images/sun.svg';
 import './App.css';
 import './bootstrap/css/bootstrap.css';
 import './bootstrap/css/bootstrap-grid.css';
 import './bootstrap/css/bootstrap-reboot.css';
-import About from "./about";
-import Contact from "./contact";
-import Home from "./home";
-
-
 
 class App extends Component {
     render() {
@@ -32,23 +22,6 @@ class App extends Component {
                     </p>
                 </section>
 
-                <HashRouter>
-                    <div>
-                        <div>
-                            <ul className="header">
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/contact">Contact</NavLink></li>
-                            </ul>
-                        </div>
-                          <div className="content">
-                               <Route exact path="/" component={Home}/>
-                               <Route path="/about" component={About}/>
-                               <Route path="/contact" component={Contact}/>
-                           </div>
-                   </div>
-
-                </HashRouter>
 
             </div>
 
