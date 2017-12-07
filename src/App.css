@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento|Vollkorn+SC');
-.App {
-  background: url("images/seaview.jpg") no-repeat center center;
+body {
+  background: url("../src/images/seaview.jpg") no-repeat center center;
   background-size: cover;
   min-height: 1200px;
 }
@@ -51,13 +51,30 @@ h2 {
 }
 nav {
   font-family: 'Vollkorn SC', serif;
+  height: 5rem;
+  clear: both;
+  float: left;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 li {
-  display: inline;
-  margin: 3rem 3rem 0 3rem;
+  margin: 1.7rem;
   font-family: 'Vollkorn SC', serif;
+  font-size: 1.2rem;
+}
+.bg-dark.bg-dark-override{
+  background-color: rgba(79, 79, 28, 1)!important;
+}
+a, a:visited {
+  color: rgba(255,255,255, .5);
+}
+a:hover {
+  color: rgba(245,245,220, .8);
+    text-decoration: underline;
+}
+a.active {
+    color: rgba(245,245,220, .4);
+    text-decoration: underline;
 }

@@ -1,0 +1,32 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+
+h2 {
+  color: rgba(78, 81, 46, .8);
+}
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgba(232, 74, 74, .8);
+}
+
+.col-lg-6 {
+  background-color: rgba(255, 255, 255, .7);
+  padding: 0 2rem 3.5rem;
+}
+.col-lg-5 {
+  text-align:center;
+}
+.portrait {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 10%;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  background-color: rgba(255, 255, 255, .6);
+  position: relative;
+  top: 3rem;
+}
