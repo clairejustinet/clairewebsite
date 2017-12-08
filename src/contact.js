@@ -7,16 +7,13 @@ import './App.css';
 class Contact extends Component {
     render() {
         return (
-            <div className="App">
-
-                <section className="intro-container">
-                    <p className="App-intro">
-
-                    </p>
-                </section>
-
-
-            </div>
+            <section className="intro-container">
+                <p className="App-intro contact-info">
+                    claire.backs@gmail.com<br/>
+                    (206) 370-1590<br/>
+                    <a href={"https://www.linkedin.com/in/clairejtucker/"}>LinkedIn</a>
+                </p>
+            </section>
         );
     }
 }

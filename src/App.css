@@ -30,6 +30,9 @@ h2 {
   position: relative;
   left: 6rem;
 }
+h3 {
+    font-family: 'Vollkorn SC', serif;
+}
 .intro-container {
   width: 100%;
   background: -webkit-linear-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,0)); /* For Safari 5.1 to 6.0 */
@@ -55,6 +58,7 @@ nav {
   clear: both;
   float: left;
 }
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -70,11 +74,34 @@ li {
 a, a:visited {
   color: rgba(255,255,255, .5);
 }
-a:hover {
+a:hover, .navbar a:hover, .contact-info a:hover {
   color: rgba(245,245,220, .8);
     text-decoration: underline;
 }
 a.active {
     color: rgba(245,245,220, .4);
     text-decoration: underline;
+}
+.resume p, .resume li {
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+}
+.resume p.exp {
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid rgba(79, 79, 28, .3);
+}
+.resume li {
+    margin: 0;
+    line-height: 1.5rem;
+}
+.resume section {
+    padding: 3rem 12rem 6rem 3rem;
+    background-color: rgba(255,255,255, .5);
+}
+.contact-info {
+    line-height: 3rem;
+    font-size: 2rem;
 }
